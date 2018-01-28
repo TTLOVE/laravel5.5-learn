@@ -23,12 +23,14 @@ Kernel	app/Http/Kernel.php	/^class Kernel extends HttpKernel$/;"	c
 LARAVEL_START	artisan	/^define('LARAVEL_START', microtime(true));$/;"	d
 LARAVEL_START	public/index.php	/^define('LARAVEL_START', microtime(true));$/;"	d
 LoginController	app/Http/Controllers/Auth/LoginController.php	/^class LoginController extends Controller$/;"	c
+PostController	/home/zyz/Documents/html/laravel5.5/app/Http/Controllers/PostController.php	/^class PostController extends Controller$/;"	c
 RedirectIfAuthenticated	app/Http/Middleware/RedirectIfAuthenticated.php	/^class RedirectIfAuthenticated$/;"	c
 RegisterController	app/Http/Controllers/Auth/RegisterController.php	/^class RegisterController extends Controller$/;"	c
 ResetPasswordController	app/Http/Controllers/Auth/ResetPasswordController.php	/^class ResetPasswordController extends Controller$/;"	c
 RouteServiceProvider	app/Providers/RouteServiceProvider.php	/^class RouteServiceProvider extends ServiceProvider$/;"	c
 TestCase	tests/TestCase.php	/^abstract class TestCase extends BaseTestCase$/;"	c
 TestMiddleware	/home/zyz/Documents/html/laravel5.5/app/Http/Middleware/TestMiddleware.php	/^class TestMiddleware$/;"	c
+TestMiddleware	app/Http/Middleware/TestMiddleware.php	/^class TestMiddleware$/;"	c
 TrimStrings	app/Http/Middleware/TrimStrings.php	/^class TrimStrings extends Middleware$/;"	c
 TrustProxies	app/Http/Middleware/TrustProxies.php	/^class TrustProxies extends Middleware$/;"	c
 User	app/User.php	/^class User extends Authenticatable$/;"	c
@@ -54,12 +56,18 @@ boot	app/Providers/RouteServiceProvider.php	/^    public function boot()$/;"	f
 commands	app/Console/Kernel.php	/^    protected $commands = [$/;"	v
 commands	app/Console/Kernel.php	/^    protected function commands()$/;"	f
 config	/home/zyz/Documents/html/laravel5.5/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php	/^        $config = config('session');$/;"	v
+content	/home/zyz/Documents/html/laravel5.5/app/Http/Controllers/PostController.php	/^        $content = $request->input('content');$/;"	v
+create	/home/zyz/Documents/html/laravel5.5/app/Http/Controllers/PostController.php	/^    public function create()$/;"	f
 create	app/Http/Controllers/Auth/RegisterController.php	/^    protected function create(array $data)$/;"	f
 createApplication	tests/CreatesApplication.php	/^    public function createApplication()$/;"	f
+csrf_field	/home/zyz/Documents/html/laravel5.5/app/Http/Controllers/PostController.php	/^        $csrf_field = csrf_field();$/;"	v
+destroy	/home/zyz/Documents/html/laravel5.5/app/Http/Controllers/PostController.php	/^    public function destroy($id)$/;"	f
 dontFlash	app/Exceptions/Handler.php	/^    protected $dontFlash = [$/;"	v
 dontReport	app/Exceptions/Handler.php	/^    protected $dontReport = [$/;"	v
 down	database/migrations/2014_10_12_000000_create_users_table.php	/^    public function down()$/;"	f
 down	database/migrations/2014_10_12_100000_create_password_resets_table.php	/^    public function down()$/;"	f
+edit	/home/zyz/Documents/html/laravel5.5/app/Http/Controllers/PostController.php	/^    public function edit($id)$/;"	f
+editUrl	/home/zyz/Documents/html/laravel5.5/app/Http/Controllers/PostController.php	/^        $editUrl = route('post.edit',['post'=>$id]);$/;"	v
 encrypter	/home/zyz/Documents/html/laravel5.5/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php	/^        $this->encrypter = $encrypter;$/;"	v
 encrypter	/home/zyz/Documents/html/laravel5.5/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php	/^    protected $encrypter;$/;"	v
 except	/home/zyz/Documents/html/laravel5.5/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php	/^                $except = trim($except, '\/');$/;"	v
@@ -72,9 +80,15 @@ getTokenFromRequest	/home/zyz/Documents/html/laravel5.5/vendor/laravel/framework
 handle	/home/zyz/Documents/html/laravel5.5/app/Http/Middleware/TestMiddleware.php	/^    public function handle($request, Closure $next, $sex)$/;"	f
 handle	/home/zyz/Documents/html/laravel5.5/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php	/^    public function handle($request, Closure $next)$/;"	f
 handle	app/Http/Middleware/RedirectIfAuthenticated.php	/^    public function handle($request, Closure $next, $guard = null)$/;"	f
+handle	app/Http/Middleware/TestMiddleware.php	/^    public function handle($request, Closure $next, $sex)$/;"	f
 headers	app/Http/Middleware/TrustProxies.php	/^    protected $headers = [$/;"	v
 hidden	app/User.php	/^    protected $hidden = [$/;"	v
+html	/home/zyz/Documents/html/laravel5.5/app/Http/Controllers/PostController.php	/^        $html = '<ul>';$/;"	v
+html	/home/zyz/Documents/html/laravel5.5/app/Http/Controllers/PostController.php	/^        $html = <<<CREATE$/;"	v
+html	/home/zyz/Documents/html/laravel5.5/app/Http/Controllers/PostController.php	/^        $html = <<<DETAIL$/;"	v
+html	/home/zyz/Documents/html/laravel5.5/app/Http/Controllers/PostController.php	/^        $html = <<<UPDATE$/;"	v
 inExceptArray	/home/zyz/Documents/html/laravel5.5/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php	/^    protected function inExceptArray($request)$/;"	f
+index	/home/zyz/Documents/html/laravel5.5/app/Http/Controllers/PostController.php	/^    public function index()$/;"	f
 input	artisan	/^    $input = new Symfony\\Component\\Console\\Input\\ArgvInput,$/;"	v
 isReading	/home/zyz/Documents/html/laravel5.5/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php	/^    protected function isReading($request)$/;"	f
 kernel	artisan	/^$kernel = $app->make(Illuminate\\Contracts\\Console\\Kernel::class);$/;"	v
@@ -90,6 +104,11 @@ middlewareGroups	app/Http/Kernel.php	/^    protected $middlewareGroups = [$/;"	v
 namespace	app/Providers/RouteServiceProvider.php	/^    protected $namespace = 'App\\Http\\Controllers';$/;"	v
 password	database/factories/UserFactory.php	/^    static $password;$/;"	v
 policies	app/Providers/AuthServiceProvider.php	/^    protected $policies = [$/;"	v
+post	/home/zyz/Documents/html/laravel5.5/app/Http/Controllers/PostController.php	/^        $post = $posts[$id];$/;"	v
+post	/home/zyz/Documents/html/laravel5.5/app/Http/Controllers/PostController.php	/^        $post = ['title'=>trim($title),'content'=>trim($content)];$/;"	v
+postUrl	/home/zyz/Documents/html/laravel5.5/app/Http/Controllers/PostController.php	/^        $postUrl = route('post.store');$/;"	v
+postUrl	/home/zyz/Documents/html/laravel5.5/app/Http/Controllers/PostController.php	/^        $postUrl = route('post.update',['post'=>$id]);$/;"	v
+posts	/home/zyz/Documents/html/laravel5.5/app/Http/Controllers/PostController.php	/^        $posts = Cache::get('posts',[]);$/;"	v
 proxies	app/Http/Middleware/TrustProxies.php	/^    protected $proxies;$/;"	v
 redirectTo	app/Http/Controllers/Auth/LoginController.php	/^    protected $redirectTo = '\/home';$/;"	v
 redirectTo	app/Http/Controllers/Auth/RegisterController.php	/^    protected $redirectTo = '\/home';$/;"	v
@@ -105,14 +124,18 @@ routeMiddleware	app/Http/Kernel.php	/^    protected $routeMiddleware = [$/;"	v
 run	database/seeds/DatabaseSeeder.php	/^    public function run()$/;"	f
 runningUnitTests	/home/zyz/Documents/html/laravel5.5/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php	/^    protected function runningUnitTests()$/;"	f
 schedule	app/Console/Kernel.php	/^    protected function schedule(Schedule $schedule)$/;"	f
+show	/home/zyz/Documents/html/laravel5.5/app/Http/Controllers/PostController.php	/^    public function show($id)$/;"	f
 status	artisan	/^$status = $kernel->handle($/;"	v
+store	/home/zyz/Documents/html/laravel5.5/app/Http/Controllers/PostController.php	/^    public function store(Request $request)$/;"	f
 testBasicTest	tests/Feature/ExampleTest.php	/^    public function testBasicTest()$/;"	f
 testBasicTest	tests/Unit/ExampleTest.php	/^    public function testBasicTest()$/;"	f
+title	/home/zyz/Documents/html/laravel5.5/app/Http/Controllers/PostController.php	/^        $title = $request->input('title');$/;"	v
 token	/home/zyz/Documents/html/laravel5.5/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php	/^            $token = $this->encrypter->decrypt($header);$/;"	v
 token	/home/zyz/Documents/html/laravel5.5/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php	/^        $token = $request->input('_token') ?: $request->header('X-CSRF-TOKEN');$/;"	v
 token	/home/zyz/Documents/html/laravel5.5/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php	/^        $token = $this->getTokenFromRequest($request);$/;"	v
 tokensMatch	/home/zyz/Documents/html/laravel5.5/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php	/^    protected function tokensMatch($request)$/;"	f
 up	database/migrations/2014_10_12_000000_create_users_table.php	/^    public function up()$/;"	f
 up	database/migrations/2014_10_12_100000_create_password_resets_table.php	/^    public function up()$/;"	f
+update	/home/zyz/Documents/html/laravel5.5/app/Http/Controllers/PostController.php	/^    public function update(Request $request, $id)$/;"	f
 uri	server.php	/^$uri = urldecode($/;"	v
 validator	app/Http/Controllers/Auth/RegisterController.php	/^    protected function validator(array $data)$/;"	f

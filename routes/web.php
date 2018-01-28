@@ -57,3 +57,6 @@ Route::group(
         }]);
     }
 );
+
+// 路由restful
+Route::resource('post', 'PostController');
